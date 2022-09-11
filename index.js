@@ -19,7 +19,7 @@ const createTxtFiles = async () => {
     for (i = 0; i <= file_count; i++) {
         start_index = base_name + i;
         try {
-            await fsx.createFile(`${txt_Files}/${start_index}.txt`)
+            await fsx.createFile(`${txt_Files}/${start_index}.txt`);
         } catch (err) {
             console.log(err);
         }
@@ -27,4 +27,18 @@ const createTxtFiles = async () => {
     console.log("Loop ended");
 };
 
-createTxtFiles();
+const deleteDriectory = async () => {
+    try {
+        await fsx.remove(txt_Files);
+        console.log("Files or folders removed");
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+// createTxtFiles();
+
+module.exports = {
+    createTxtFiles,
+    deleteDriectory,
+};
