@@ -16,7 +16,7 @@ const createTxtFiles = async () => {
         console.log(err);
     }
     // make text files
-    for (i = 0; i <= file_count; i++) {
+    for (i = 1; i <= file_count; i++) {
         start_index = base_name + i;
         try {
             await fsx.createFile(`${txt_Files}/${start_index}.txt`);

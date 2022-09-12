@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "create text files",
   "main": "index.js",
+  "bin": {
+    "gentxt": "./bin/gen.js",
+    "deltxt": "./bin/del.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create": "node -e \"require('./index').createTxtFiles()\"",
