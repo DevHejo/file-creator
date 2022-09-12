@@ -110,3 +110,7 @@ combined.log
 # text files
 
 *.txt
+
+.vscode
+package-lock.json
+package-lock.json

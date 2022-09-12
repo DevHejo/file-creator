@@ -1,9 +1,21 @@
 # Create or Delete Files
 
-## Create Files
+## Global install
+`npm install -g`
 
-run "npm run create" in terminal.
+## Create Files
+`gentxt <new_dir_name> <no.of txt files>`
+
+eg.: `gentxt test 69`
+
+OR
+
+run `npm run create` in terminal.
 
 ## Delete Files and Directory
 
-run "npm run delete" in terminal
+`deltxt <dir_name>`
+
+OR
+
+run `npm run delete` in terminal
